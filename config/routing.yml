@@ -1,0 +1,3 @@
+activity_stream:
+    pattern: /activity
+    defaults: { _controller: xtreamwayz.activity.main.controller:handle }

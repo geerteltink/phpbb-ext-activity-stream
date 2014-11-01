@@ -1,0 +1,22 @@
+services:
+    xtreamwayz.activity.main.controller:
+        class: xtreamwayz\activity\controller\main
+        arguments:
+            - @controller.helper
+            - @template
+            - @xtreamwayz.activity.service
+    xtreamwayz.activity.service:
+        class: xtreamwayz\activity\service\activity_service
+        arguments:
+            - @dbal.conn
+            - @user
+            - @auth
+            - %core.root_path%
+            - %core.php_ext%
+    xtreamwayz.activity.main.listener:
+        class: xtreamwayz\activity\event\main_listener
+        arguments:
+            - @controller.helper
+            - @template
+        tags:
+            - { name: event.listener }

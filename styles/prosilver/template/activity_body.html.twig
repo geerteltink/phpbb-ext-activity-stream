@@ -1,0 +1,31 @@
+{% include 'overall_header.html' %}
+
+<h2>Recent Activity</h2>
+{% for post in posts %}
+    <div class="post bg1 <!-- IF post.S_UNREAD_POST --> unreadpost<!-- ENDIF --><!-- IF postrow.S_POST_REPORTED --> reported<!-- ENDIF --><!-- IF postrow.S_POST_DELETED --> deleted<!-- ENDIF --><!-- IF postrow.S_ONLINE and not postrow.S_POST_HIDDEN --> online<!-- ENDIF --><!-- IF postrow.POSTER_WARNINGS --> warned<!-- ENDIF -->">
+        <div class="inner">
+            <div class="postbody">
+                <h3 class="media-heading media-heading-sm">
+                    {{ post.author_full }}
+                    {% if post.is_first_post %}
+                        created topic
+                    {% else %}
+                        replied to
+                    {% endif %}
+                    &ldquo;<a href="{{ post.topic_url }}">{{ post.topic_title }}</a>&rdquo;
+                </h3>
+                <p class="author">
+                    <time datetime="{{ post.post_time_iso }}">{{ post.post_time }}</time>
+                </p>
+                <div class="content">
+                    {{ post.post_text }}
+                </div>
+                <div>
+                    <a href="{{ post.post_url }}">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
+{% include 'overall_footer.html' %}
