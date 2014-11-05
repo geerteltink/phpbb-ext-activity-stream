@@ -2,10 +2,13 @@
 
 {% block content %}
 
-    <h2>Recent Activity</h2>
-    <ul class="media-list">
+    <div class="nocard">
+        <h2 class="card-heading-main">Recent Activity</h2>
+    </div>
+
     {% for post in posts %}
-        <li class="media media-divider">
+    <article class="card">
+        <div class="media">
             <div class="media-object media-object-sm media-object-circle">
                 {% if post.author_avatar %}{{ post.author_avatar }}{% else %}<img src="{T_THEME_PATH}/img/no_avatar.gif" alt="no avatar" />{% endif %}
             </div>
@@ -27,8 +30,8 @@
                     <a href="{{ post.post_url }}">Read more</a>
                 </div>
             </div>
-        </li>
+        </div>
+    </article>
     {% endfor %}
-    </ul>
 
 {% endblock %}
