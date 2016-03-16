@@ -1,6 +1,6 @@
 # phpBB 3.1 Activity Stream Extension - DEPRECATED
 
-** This package is not maintained anymore **
+**This package is not maintained anymore**
 
 Activity Stream is an Extension for [phpBB 3.1](https://www.phpbb.com/)
 
