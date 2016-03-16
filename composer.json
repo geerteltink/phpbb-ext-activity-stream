@@ -1,7 +1,7 @@
 {
 	"name": "xtreamwayz/activity",
 	"type": "phpbb-extension",
-	"description": "Activity Stream Extension for phpBB 3.1",
+	"description": "Activity Stream Extension for phpBB 3.1 - DEPRECATED",
 	"homepage": "https://github.com/xtreamwayz/phpbb-ext-activity-stream",
 	"version": "0.9.0",
 	"time": "2014-11-01",
