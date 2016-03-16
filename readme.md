@@ -1,9 +1,6 @@
-# phpBB 3.1 Activity Stream Extension
+# phpBB 3.1 Activity Stream Extension - DEPRECATED
 
-[![Latest Stable Version](https://poser.pugx.org/xtreamwayz/activity/v/stable.svg)](https://packagist.org/packages/xtreamwayz/activity)
-[![Latest Unstable Version](https://poser.pugx.org/xtreamwayz/activity/v/unstable.svg)](https://packagist.org/packages/xtreamwayz/activity)
-[![Total Downloads](https://poser.pugx.org/xtreamwayz/activity/downloads.svg)](https://packagist.org/packages/xtreamwayz/activity)
-[![License](https://poser.pugx.org/xtreamwayz/activity/license.svg)](https://packagist.org/packages/xtreamwayz/activity)
+** This package is not maintained anymore **
 
 Activity Stream is an Extension for [phpBB 3.1](https://www.phpbb.com/)
 
@@ -22,13 +19,3 @@ Set up the dependencies:
     php composer.phar install --dev
 
 Go to "ACP" > "Customise" > "Extensions" and enable the "phpBB 3.1 Activity Stream Extension" extension.
-
-## Collaborate
-
-* Create a issue in the [tracker](https://github.com/xtreamwayz/phpbb-ext-activity-stream/issues)
-* Note the restrictions for [branch names](https://wiki.phpbb.com/Git#Branch_Names) and [commit messages](https://wiki.phpbb.com/Git#Commit_Messages) are similar to phpBB3
-* Submit a [pull-request](https://github.com/xtreamwayz/phpbb-ext-activity-stream/pulls)
-
-## License
-
-[GPLv2](license.txt)
